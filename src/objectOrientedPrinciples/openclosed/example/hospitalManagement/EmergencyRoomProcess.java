@@ -1,4 +1,4 @@
-package objectOrientedPrinciples.openclosed;
+package objectOrientedPrinciples.openclosed.example.hospitalManagement;
 
 public class EmergencyRoomProcess {
 
