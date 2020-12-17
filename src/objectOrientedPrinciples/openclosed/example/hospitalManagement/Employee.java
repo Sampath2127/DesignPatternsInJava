@@ -8,6 +8,7 @@ abstract public class Employee {
     private String department;
 
     private boolean employeeWorking;
+
     public Employee( long employeeId, String employeeName, String department, boolean employeeWorking ) {
         this.employeeId = employeeId;
         this.employeeName = employeeName;
