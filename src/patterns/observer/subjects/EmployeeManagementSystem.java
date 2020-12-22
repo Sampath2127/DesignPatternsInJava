@@ -45,8 +45,15 @@ public class EmployeeManagementSystem implements ISubject {
 
     public void updateEmployee( Employee employee, String employeeName, long salary ) {
         List<Employee> employeeList = employeeDAO.getEmployeeList ();
-        int empIndex = employeeList.indexOf (employee);
-        Employee employeeUpdated = employeeList.get (empIndex);
+        Employee employeeUpdated = null;
+        int empIndex=-1;
+        try{
+             empIndex = employeeList.indexOf (employee);
+             employeeUpdated = employeeList.get (empIndex);
+        }catch ( NullPointerException npe ){
+            System.out.println ("No Employee found \n Add as a new Hire if new Employee");
+            return;
+        }
         if ( !employeeName.isEmpty () ) {
             employeeUpdated.setEmployeeName (employeeName);
             this.employee = employeeUpdated;

@@ -26,7 +26,9 @@ public class Main {
         ems.hireEmployee (sachin);
         ems.hireEmployee (sid);
 
+        ems.removeObserver (payroll);
         ems.updateEmployee (sachin, "Sachin Tendulkar", 0);
+
 
 
 
