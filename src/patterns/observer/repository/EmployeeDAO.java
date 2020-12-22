@@ -23,11 +23,6 @@ public class EmployeeDAO {
         employeeList.add (employee);
     }
 
-    public void updateEmployee( Employee employee ) {
-        int employeeIndex = employeeList.indexOf (employee);
-        employeeList.add (employeeIndex, employee);
-    }
-
     public List<Employee> getEmployeeList() {
         return employeeList;
     }

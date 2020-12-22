@@ -4,7 +4,7 @@ import patterns.observer.domain.Employee;
 import patterns.observer.observers.HRDepartment;
 import patterns.observer.observers.IObserver;
 import patterns.observer.observers.PayrollDepartment;
-import patterns.observer.service.EmployeeManagementSystem;
+import patterns.observer.subjects.EmployeeManagementSystem;
 
 import java.util.Date;
 
